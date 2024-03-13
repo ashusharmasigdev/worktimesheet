@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Work Timesheet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container-title">
+      <button class="rembtn dbg"></button>
+    </div>
+    <div class="container">
+      <div class="title">
+        <span>WORK TIMESHEET</span>
+      </div>
+      <div class="input-container">
+        <input type="date" id="date-input" />
+        <input type="text" id="task-input" placeholder="Enter task" />
+        <input
+          type="text"
+          id="duration-input"
+          placeholder="Duration (hh:mm:ss)"
+        />
+        <button id="add-btn">Add Task</button>
+      </div>
+      <ul id="task-list"></ul>
+      <textarea id="output" rows="10" readonly></textarea>
+      <span class="tip">Tip: Click taskarea to copy it to clipboard</span>
+    </div>
+    <div class="container-footer">
+      <button class="rembtn gh">GITHUB</button>
+      <button class="rembtn ct">CONTACT</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

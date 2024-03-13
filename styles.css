@@ -1,0 +1,170 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f6f6;
+    font-size: 16px;
+}
+
+.container-title {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 40px;
+}
+
+.container-footer {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 40px;
+    margin-bottom: 120px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    margin-top: 10px;
+    background-color: #fff;
+    box-shadow: 0 8px 120px -4px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.container .title {
+    width: 100%;
+    text-align: center;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .title {
+    letter-spacing: 4px;
+    opacity: 0.6;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.input-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr auto;
+    gap: 10px;
+    padding: 0 16px;
+}
+
+input[type="text"],
+input[type="date"] {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: #f2f2f2;
+    transition: background-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus {
+    background-color: #e6e6e6;
+    outline: none;
+}
+
+button {
+    background-color: #5a6064;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+button.rembtn {
+    background-color: transparent;
+    color: #3367D6;
+    padding: 0;
+    font-weight: 400;
+}
+
+button.rembtn:hover {
+    background-color: transparent;
+    opacity: 0.6;
+}
+
+button:hover {
+    background-color: #3367D6;
+}
+
+#task-list {
+    list-style-type: none;
+    padding-inline: 10px;
+}
+
+#task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+#task-list li:last-child {
+    border-bottom: none;
+}
+
+#task-list li:hover {
+    background-color: #f6f6f6;
+}
+
+#task-list li:last-child {
+    margin-bottom: 0;
+}
+
+#output {
+    resize: vertical;
+    border: none;
+    padding: 20px;
+    font-family: 'Inter', monospace;
+    font-size: 1rem;
+    background-color: #f2f2f2;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#output:focus {
+    outline: none;
+}
+
+.tip {
+    position: absolute;
+    bottom: 12px;
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    text-transform: uppercase;
+    opacity: 0.3;
+}
