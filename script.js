@@ -64,9 +64,7 @@ function formatDuration(duration) {
   const formattedMinutes = Math.floor((totalSeconds % 3600) / 60);
   const formattedSeconds = totalSeconds % 60;
 
-  return `${formatTime(formattedHours)}:${formatTime(
-    formattedMinutes
-  )}:${formatTime(formattedSeconds)}`;
+  return `${formatTime(formattedHours)} hours, ${formatTime(formattedMinutes)} minutes, ${formatTime(formattedSeconds)} seconds.`
 }
 
 function formatTime(time) {
